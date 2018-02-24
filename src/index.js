@@ -4,13 +4,13 @@ module.exports = function makeExchange(currency) {
    if(currency <= 0) return {};
   var answer = {};
    var h = Math.floor(currency / 50);
-   var currency = currency % 50;
+    var currency = currency % 50;
    var q = Math.floor(currency / 25);
-   var currency = currency % 25;
+   currency = currency % 25;
    var d = Math.floor(currency / 10);
-   var currency = currency % 10;
+   currency = currency % 10;
    var n = Math.floor(currency / 5);
-   var currency = currency % 5;
+   currency = currency % 5;
    var p = currency;
 
     if(h > 0) answer.H = h;
